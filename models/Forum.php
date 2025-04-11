@@ -58,6 +58,7 @@ function forum_insert($request)
     }
     
     // Date actuelle pour l'article
+    date_default_timezone_set('America/Toronto');
     $date = date('Y-m-d');
     
     $sql = "INSERT INTO forum (titre, article, date_creation, id_utilisateur) 
